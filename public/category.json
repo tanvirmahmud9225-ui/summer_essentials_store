@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "UV Protection Sunglasses",
-        "category": "Accessories"
+        "name": "Portable Mini Fan",
+        "category": "Electronics"
     },
     {
         "id": 2,
@@ -31,8 +31,8 @@
     },
     {
         "id": 7,
-        "name": "Portable Mini Fan",
-        "category": "Electronics"
+        "name": "UV Protection Sunglasses",
+        "category": "Accessories"
     },
     {
         "id": 8,

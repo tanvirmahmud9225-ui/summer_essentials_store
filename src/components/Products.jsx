@@ -4,13 +4,13 @@ import ProductsCard from './ProductsCard';
 
 const Products = async () => {
     const products = await getProducts();
-    console.log(products);
+
     return (
         <div className='w-7xl mx-auto mt-10'>
-            <h1 className='my-5 font-bold text-5xl'>Top Products</h1>
-            <div>
+            <h1 className='my-10 font-bold text-5xl'>Top Products</h1>
+            <div className='grid grid-cols-4 gap-8'>
                 {
-                    products.map(product => <ProductsCard key={product.id} product={product} />)
+                    products.slice(0, 4).map(product => <ProductsCard key={product.id} product={product} />)
                 }
             </div>
         </div>

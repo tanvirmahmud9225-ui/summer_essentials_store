@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "name": "UV Protection Sunglasses",
-    "brand": "SunShade",
-    "price": 15,
-    "rating": 4.7,
-    "stock": 10,
-    "description": "Stylish UV protection sunglasses perfect for summer outings.",
-    "image": "https://i.ibb.co/bRzjwwbd/close-up-picture-hat-glasses-beach.jpg",
-    "category": "Accessories"
+    "name": "Portable Mini Fan",
+    "brand": "CoolBreeze",
+    "price": 12,
+    "rating": 4.4,
+    "stock": 35,
+    "description": "Handheld rechargeable fan with 3 speeds for hot summer days.",
+    "image": "https://i.ibb.co/FbGcCKvS/pexels-fox-58267-5850342.jpg",
+    "category": "Electronics"
   },
   {
     "id": 2,
@@ -67,14 +67,14 @@
   },
   {
     "id": 7,
-    "name": "Portable Mini Fan",
-    "brand": "CoolBreeze",
-    "price": 12,
-    "rating": 4.4,
-    "stock": 35,
-    "description": "Handheld rechargeable fan with 3 speeds for hot summer days.",
-    "image": "https://i.ibb.co/FbGcCKvS/pexels-fox-58267-5850342.jpg",
-    "category": "Electronics"
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "https://i.ibb.co/bRzjwwbd/close-up-picture-hat-glasses-beach.jpg",
+    "category": "Accessories"
   },
   {
     "id": 8,
