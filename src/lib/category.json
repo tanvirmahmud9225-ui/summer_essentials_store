@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "UV Protection Sunglasses",
+        "category": "Accessories"
+    },
+    {
+        "id": 2,
+        "name": "Quick-Dry Swim Trunks",
+        "category": "Clothing"
+    },
+    {
+        "id": 3,
+        "name": "Oversized Beach Towel",
+        "category": "Beach Essential"
+    },
+    {
+        "id": 4,
+        "name": "SPF 50 Sunscreen Lotion",
+        "category": "Skincare"
+    },
+    {
+        "id": 5,
+        "name": "Cozy Flip Flops",
+        "category": "Footwear"
+    },
+    {
+        "id": 6,
+        "name": "Wide-Brim Summer Hat",
+        "category": "Accessories"
+    },
+    {
+        "id": 7,
+        "name": "Portable Mini Fan",
+        "category": "Electronics"
+    },
+    {
+        "id": 8,
+        "name": "Insulated Water Bottle",
+        "category": "Drinkware"
+    },
+    {
+        "id": 9,
+        "name": "Summer Floral Dress",
+        "category": "Clothing"
+    },
+    {
+        "id": 10,
+        "name": "Cooling Towel",
+        "category": "Cooling"
+    }
+]
