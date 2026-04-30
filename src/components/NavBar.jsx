@@ -1,10 +1,14 @@
 "use client";
-import { Avatar, Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/logo.png"
+import { authClient, signOut, useSession } from "@/lib/auth-client";
 
 const Navbar = () => {
+
+    const { data } = useSession()
+
+    const user = data?.user
 
 
 
@@ -36,14 +40,21 @@ const Navbar = () => {
 
                 <div className="flex gap-4">
 
-                    <Link href={``}
-                        className='bg-blue-600 text-white font-bold py-2 w-25 block text-center rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-base-200'>
-                        Login
-                    </Link>
-                    <Link href={``}
-                        className='bg-blue-600 text-white font-bold py-2 w-25 block text-center rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-base-200'>
-                        Logout
-                    </Link>
+                    {
+                        user ?
+                            <Link href={`/`}
+                                onClick={() => signOut()}
+                                className='bg-blue-600 text-white font-bold py-2 w-25 block text-center rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-base-200'>
+                                Logout
+                            </Link>
+                            :
+                            <Link
+
+                                href={`/login`}
+                                className='bg-blue-600 text-white font-bold py-2 w-25 block text-center rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-base-200'>
+                                Login
+                            </Link>
+                    }
 
                 </div>
             </nav>
