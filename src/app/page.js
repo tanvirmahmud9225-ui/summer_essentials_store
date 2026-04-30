@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Products from "@/components/Products";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="mb-2000">
       <div>
         <Banner />
+        <Products />
       </div>
     </div>
   );
