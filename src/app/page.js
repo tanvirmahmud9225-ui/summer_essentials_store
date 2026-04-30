@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="mb-2000">
+    <div className="mb-20">
       <div>
         <Banner />
         <Products />
