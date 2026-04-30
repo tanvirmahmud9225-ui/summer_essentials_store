@@ -2,6 +2,7 @@
 import { authClient } from "@/lib/auth-client";
 import { Check, Eye, EyeSlash } from "@gravity-ui/icons";
 import { Button, FieldError, Form, Input, InputGroup, TextField } from "@heroui/react";
+import Link from "next/link";
 import { useState } from "react";
 import { HiOutlinePhoto } from "react-icons/hi2";
 import { MdCheck } from "react-icons/md";
@@ -93,11 +94,12 @@ const LoginPage = () => {
 
 
 
-                    <div className="flex mt-2 gap-2">
+                    <div className="flex flex-col mt-2 gap-2">
                         <Button className="w-full py-5 text-lg" type="submit">
                             <MdCheck className="size-5" />
                             Login
                         </Button>
+                        <p className="flex justify-center items-center text-gray-700 font-semibold">Dont’t Have An Account ? <Link className="block ml-2 bold text-xl" href={'/register'}> Register</Link></p>
                     </div>
                 </Form>
             </div>
