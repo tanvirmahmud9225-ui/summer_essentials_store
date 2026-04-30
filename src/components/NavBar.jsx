@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/logo.png"
 import { authClient, signOut, useSession } from "@/lib/auth-client";
+import { Avatar } from "@heroui/react";
 
 const Navbar = () => {
 
@@ -31,7 +32,7 @@ const Navbar = () => {
                         <Link href={"/"}>Home</Link>
                     </li>
                     <li>
-                        <Link href={"/"}>Products</Link>
+                        <Link href={"/products"}>Products</Link>
                     </li>
                     <li>
                         <Link href={"/"}>My Profile</Link>
@@ -42,11 +43,18 @@ const Navbar = () => {
 
                     {
                         user ?
-                            <Link href={`/`}
-                                onClick={() => signOut()}
-                                className='bg-blue-600 text-white font-bold py-2 w-25 block text-center rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-base-200'>
-                                Logout
-                            </Link>
+                            <div className="flex items-center gap-3">
+                                <Avatar>
+                                    <Avatar.Image alt="John Doe" src={user.image} />
+                                    <Avatar.Fallback>JD</Avatar.Fallback>
+                                </Avatar>
+
+                                <Link href={`/`}
+                                    onClick={() => signOut()}
+                                    className='bg-blue-600 text-white font-bold py-2 w-25 block text-center rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-base-200'>
+                                    Logout
+                                </Link>
+                            </div>
                             :
                             <Link
 
