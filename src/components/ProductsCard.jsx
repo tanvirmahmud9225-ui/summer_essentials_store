@@ -6,7 +6,7 @@ const ProductsCard = ({ product }) => {
         <div>
             <div>
                 <div>
-                    <Image src={product.image}  width={50} height={50} alt='' />
+                    <Image src={product.image}  width={50} height={50} alt={product.name} />
                 </div>
                 <h1>{product.name}</h1>
             </div>
