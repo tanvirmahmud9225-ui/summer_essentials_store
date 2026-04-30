@@ -36,7 +36,14 @@ const Navbar = () => {
 
                 <div className="flex gap-4">
 
-                    <Button className={'text-xl px-8 py-5 '}>Login</Button>
+                    <Link href={``}
+                        className='bg-blue-600 text-white font-bold py-2 w-25 block text-center rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-base-200'>
+                        Login
+                    </Link>
+                    <Link href={``}
+                        className='bg-blue-600 text-white font-bold py-2 w-25 block text-center rounded-3xl cursor-pointer hover:bg-blue-500 hover:text-base-200'>
+                        Logout
+                    </Link>
 
                 </div>
             </nav>
