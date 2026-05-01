@@ -1,6 +1,6 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-import { Check, Eye, EyeSlash } from "@gravity-ui/icons";
+import { Eye, EyeSlash } from "@gravity-ui/icons";
 import { Button, FieldError, Form, Input, InputGroup, TextField } from "@heroui/react";
 import Link from "next/link";
 import { useState } from "react";
@@ -32,9 +32,8 @@ const LoginPage = () => {
             alert(error.message)
         }
         if (data) {
-            alert("Successful Logged In")
+            alert("Successfully Logged In")
         }
-
     }
 
 

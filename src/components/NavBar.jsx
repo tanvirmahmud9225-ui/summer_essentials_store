@@ -17,14 +17,16 @@ const Navbar = () => {
         <div className="border-b px-2">
             <nav className=" flex justify-between items-center py-3 max-w-7xl mx-auto w-full">
                 <div className="flex gap-2 items-end">
-                    <Image
-                        src={Logo}
-                        alt="logo"
-                        loading="eager"
-                        width={300}
-                        height={30}
-                        className="w-45 object-cover"
-                    />
+                    <Link href={'/'}>
+                        <Image
+                            src={Logo}
+                            alt="logo"
+                            loading="eager"
+                            width={300}
+                            height={30}
+                            className="w-45 object-cover"
+                        />
+                    </Link>
                 </div>
 
                 <ul className="flex items-center gap-15 text-xl font-semibold">
@@ -35,7 +37,7 @@ const Navbar = () => {
                         <Link href={"/products"}>Products</Link>
                     </li>
                     <li>
-                        <Link href={"/"}>My Profile</Link>
+                        <Link href={"/myprofile"}>My Profile</Link>
                     </li>
                 </ul>
 
@@ -46,7 +48,7 @@ const Navbar = () => {
                             <div className="flex items-center gap-3">
                                 <Avatar>
                                     <Avatar.Image alt="John Doe" src={user.image} />
-                                    <Avatar.Fallback>JD</Avatar.Fallback>
+                                    <Avatar.Fallback>TM</Avatar.Fallback>
                                 </Avatar>
 
                                 <Link href={`/`}

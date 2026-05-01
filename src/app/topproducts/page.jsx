@@ -3,7 +3,7 @@ import React from 'react';
 
 const TopPages = async () => {
     const products = await getProducts();
-    console.log(products);
+   
     return (
         <div>
             <div>

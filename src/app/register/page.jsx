@@ -25,7 +25,6 @@ const RegisterPage = () => {
             callbackURL: "/",
         });
 
-        console.log(data);
         if (error) {
             alert(error.message)
         }

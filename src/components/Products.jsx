@@ -6,7 +6,7 @@ const Products = async () => {
     const products = await getProducts();
 
     return (
-        <div className='w-7xl mx-auto mt-10'>
+        <div className='w-7xl mx-auto my-35'>
             <h1 className='my-10 font-bold text-5xl'>Top Products</h1>
             <div className='grid grid-cols-4 gap-8'>
                 {

@@ -11,20 +11,22 @@ const ProductDetailsPage = async ({ params }) => {
     console.log(products);
 
     const product = products.find(p => p.id == id);
-    console.log(product);
+
 
 
     return (
-        <div className='w-7xl mx-auto'>
-            <div className='p-4 border border-gray-300 rounded-lg grid grid-cols-2 mt-10 '>
-                <div className='flex-1 mb-5 relative aspect-square w-120'>
-                    <Image
-                        className='object-cover rounded-lg'
-                        src={product.image}
-                        fill
-                        alt={product.name} />
+        <div className='w-7xl mx-auto shadow-lg border border-gray-200 rounded-lg mt-15'>
+            <div className='p-10  grid grid-cols-2 gap-15'>
+                <div className='border p-15 rounded-lg'>
+                    <div className='relative aspect-square rounded-xl'>
+                        <Image
+                            className='object-cover rounded-xl w-40'
+                            src={product.image}
+                            fill
+                            alt={product.name} />
+                    </div>
                 </div>
-                <div className='flex-1 space-y-3'>
+                <div className='space-y-3'>
                     <h1 className='font-bold text-lg'>{product.name}</h1>
                     <div className='flex items-center gap-5 '>
                         <div className='font-semibold text-lg flex items-center gap-2'>
