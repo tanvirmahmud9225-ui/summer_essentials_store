@@ -4,6 +4,7 @@ import { Eye, EyeSlash } from "@gravity-ui/icons";
 import { Button, FieldError, Form, Input, InputGroup, TextField } from "@heroui/react";
 import Link from "next/link";
 import { useState } from "react";
+import { FaGoogle } from "react-icons/fa";
 import { HiOutlinePhoto } from "react-icons/hi2";
 import { MdCheck } from "react-icons/md";
 import { TfiEmail, TfiLock } from "react-icons/tfi";
@@ -36,7 +37,11 @@ const LoginPage = () => {
         }
     }
 
-
+    const handleGoogleSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        })
+    }
 
 
 
@@ -99,6 +104,9 @@ const LoginPage = () => {
                             Login
                         </Button>
                         <p className="flex justify-center items-center text-gray-700 font-semibold">Dont’t Have An Account ? <Link className="block ml-2 bold text-xl" href={'/register'}> Register</Link></p>
+                        <p className="text-center font-bold text-xl">Or</p>
+                        <Button onClick={handleGoogleSignIn} variant="danger-soft" className="py-5.5 w-full hover:bg-gray-300"><Link
+                            className="flex gap-3 items-center ml-2 bold  text-lg text-black" href={''}> <FaGoogle /> <span>Continue With Google</span> </Link></Button>
                     </div>
                 </Form>
             </div>
