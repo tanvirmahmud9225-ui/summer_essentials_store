@@ -1,9 +1,11 @@
+
+import PriceIncreaseDecreas from '@/components/PriceIncreaseDecreas';
 import { getProducts } from '@/lib/fetchdata';
-import { Separator } from '@heroui/react';
-import { CloudSnow } from 'lucide-react';
+import { Button, Separator } from '@heroui/react';
+import { Minus, Plus } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
-import { FaHeart } from 'react-icons/fa';
+
 
 const ProductDetailsPage = async ({ params }) => {
     const { id } = await params;
@@ -11,7 +13,6 @@ const ProductDetailsPage = async ({ params }) => {
     console.log(products);
 
     const product = products.find(p => p.id == id);
-
 
 
     return (
@@ -26,16 +27,17 @@ const ProductDetailsPage = async ({ params }) => {
                             alt={product.name} />
                     </div>
                 </div>
-                <div className='space-y-3'>
-                    <h1 className='font-bold text-lg'>{product.name}</h1>
-                    <div className='flex items-center gap-5 '>
-                        <div className='font-semibold text-lg flex items-center gap-2'>
-                            <FaHeart />
-                            <span>300</span>
+                <div className='space-y-4'>
+                    <h1 className='font-bold text-2xl'>{product.name}</h1>
+                    <p>{product.description}</p>
+                    <p> <span className='font-bold'>Price:</span> <span>${product.price}</span></p>
+                    <p><span className='font-bold'>Stock: </span><span>{product.stock}</span></p>
+                    <div className='flex items-center gap-4'>
+                        <div className=''>
+                            <PriceIncreaseDecreas />
                         </div>
-                        <Separator orientation='vertical' />
                         <div>
-                            <span className='font-semibold text-lg'>$ 2300</span>
+                            <Button variant='danger' className="text-xl font-bold p-5.5 rounded-lg">+ Add To Cart</Button>
                         </div>
                     </div>
                 </div>
