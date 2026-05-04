@@ -7,9 +7,9 @@ const ProductsPage = async () => {
     const products = await getProducts();
 
     return (
-        <div className='w-7xl mx-auto my-20'>
-            
-            <div className='grid grid-cols-4 gap-8'>
+        <div className='max-w-7xl w-[95vw] mx-auto my-20'>
+
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2 gap-8'>
                 {
                     products.map(product => <ProductsCard key={product.id} product={product} />)
                 }

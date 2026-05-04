@@ -16,8 +16,8 @@ const ProductDetailsPage = async ({ params }) => {
 
 
     return (
-        <div className='w-7xl mx-auto shadow-lg border border-gray-200 rounded-lg mt-15'>
-            <div className='p-10  grid grid-cols-2 gap-15'>
+        <div className='max-w-7xl w-[95vw] mx-auto shadow-lg border border-gray-200 rounded-lg mt-15'>
+            <div className='p-10  grid md:grid-cols-2 gap-15'>
                 <div className='border p-15 rounded-lg'>
                     <div className='relative aspect-square rounded-xl'>
                         <Image

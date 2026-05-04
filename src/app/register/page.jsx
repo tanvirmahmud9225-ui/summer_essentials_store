@@ -38,10 +38,10 @@ const RegisterPage = () => {
 
 
     return (
-        <div className="w-7xl h-140 flex flex-col justify-center bg-gray-200 mt-20 mb-30 mx-auto rounded-2xl overflow-hidden">
+        <div className="max-w-7xl w-[95vw] md:h-[60vh] lg:h-[70vh] flex flex-col justify-center bg-gray-200 mt-20 mb-30 mx-auto rounded-2xl overflow-hidden">
             <h1 className='text-4xl font-bold text-center my-5'>Please Sign Up</h1>
             <div className="py-5 flex justify-center">
-                <Form className="flex w-150 flex-col gap-4" onSubmit={onSubmit}>
+                <Form className="flex md:w-150 sm:w-120 w-90  flex-col gap-4" onSubmit={onSubmit}>
                     {/* name */}
                     <TextField
                         className="relative"
@@ -121,7 +121,7 @@ const RegisterPage = () => {
 
 
 
-                    <div className="flex mt-2 gap-2">
+                    <div className="flex flex-wrap justify-center mt-2 gap-2">
                         <Button className="w-50 py-5 text-lg" type="submit">
                             <MdCheck className="size-5" />
                             Register Account

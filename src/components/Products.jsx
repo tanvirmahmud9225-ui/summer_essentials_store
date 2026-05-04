@@ -6,11 +6,11 @@ const Products = async () => {
     const products = await getProducts();
 
     return (
-        <div className='w-7xl mx-auto my-35'>
+        <div className='max-w-7xl w-[95vw] mx-auto my-35'>
             <h1 className='my-10 font-bold text-5xl'>Top Products</h1>
-            <div className='grid grid-cols-4 gap-8'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-2 gap-8'>
                 {
-                    products.slice(0, 4).map(product => <ProductsCard key={product.id} product={product} />)
+                    products.slice(0, 3).map(product => <ProductsCard key={product.id} product={product} />)
                 }
             </div>
         </div>

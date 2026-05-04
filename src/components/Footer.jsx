@@ -9,12 +9,12 @@ import { FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className='w-7xl mx-auto  rounded-lg'>
+        <div className='max-w-7xl w-[95vw] mx-auto  rounded-lg'>
             <div className='py-20'>
-                <div className='grid grid-cols-4 gap-10'>
-                    <div className='space-y-4'>
+                <div className='grid lg:grid-cols-4 grid-cols-2 place-items-center gap-10'>
+                    <div className='space-y-4 ml-10 md:ml-20 lg:ml-0'>
                         <div>
-                            <Image className='w-50' src={Logo} width={500} height={50} alt='' />
+                            <Image className='max-w-50' src={Logo} width={500} height={50} alt='' />
                         </div>
                         <p className='text-gray-500'>
                             SunCart – Your Ultimate Summer Essentials Marketplace. Shop Smart, Stay Cool.
@@ -84,7 +84,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='flex justify-between items-center border-t py-2'>
+            <div className='flex justify-center lg:justify-between items-center flex-wrap border-t py-2'>
                 <h1 className='text-gray-500'>Copyright © 2026 SunCart</h1>
                 <div>
                     <Image className='w-170' src={PaymentImg} width={900} height={300} alt='payment' />

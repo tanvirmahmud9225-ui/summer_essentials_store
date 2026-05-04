@@ -14,15 +14,23 @@ const MyProfile = () => {
 
 
     return (
-        <div className="w-7xl my-20 mx-auto rounded-lg" >
-            <div className='border p-5 rounded-lg  flex flex-col justify-center items-center space-y-3  relative '>
-                <Avatar className='relative aspect-square  w-80 h-80'>
-                    <Avatar.Image className='object-cover ' alt={user?.name} src={user?.image} />
-                </Avatar>
-                <h2 className='font-bold text-2xl'>{user?.name}</h2>
-                <h1>{user?.email}</h1>
-                <UpdateProfile />
-            </div>
+        <div className="max-w-7xl w-[95vw] my-20 mx-auto rounded-lg" >
+            {
+                user ? <div>
+                    <div className='border p-5 rounded-lg  flex flex-col justify-center items-center space-y-3  relative '>
+                        <Avatar className='relative aspect-square  w-80 h-80'>
+                            <Avatar.Image className='object-cover ' alt={user?.name} src={user?.image} />
+                        </Avatar>
+                        <h2 className='font-bold text-2xl'>{user?.name}</h2>
+                        <h1>{user?.email}</h1>
+                        <UpdateProfile />
+                    </div>
+                </div>
+                    :
+                    <div className='flex justify-center items-center'>
+                        <h1 className='text-4xl font-bold'>Please Logged In</h1>
+                    </div>
+            }
         </div>
     );
 };

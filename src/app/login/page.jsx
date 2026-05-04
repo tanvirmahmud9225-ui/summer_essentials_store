@@ -48,10 +48,10 @@ const LoginPage = () => {
 
 
     return (
-        <div className="w-7xl h-[70vh] flex flex-col justify-center bg-gray-200 mt-20 mb-30 mx-auto rounded-2xl overflow-hidden">
-            <h1 className='text-4xl font-bold text-center my-5'>Please Log In</h1>
+        <div className="max-w-7xl w-[95vw] md:h-[60vh] lg:h-[70vh] flex flex-col justify-center bg-gray-200 mt-20 mb-30 mx-auto rounded-2xl overflow-hidden">
+            <h1 className='md:text-4xl text-2xl font-bold text-center my-5'>Please Log In</h1>
             <div className="py-5 flex justify-center">
-                <Form className="flex w-90 flex-col gap-4" onSubmit={onSubmit}>
+                <Form className="flex md:max-w-90 flex-col gap-4" onSubmit={onSubmit}>
 
                     {/* email */}
                     <TextField
